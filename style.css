@@ -1,0 +1,194 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+  text-decoration: none;
+}
+.wrapper > * {
+  grid-column: col-start / span 12;
+}
+@media (min-width: 500px) {
+
+  .side {
+    grid-column: col-start / span 3;
+    grid-row: 3;
+  }
+  .ad {
+    grid-column: col-start / span 3;
+    grid-row: 4;
+  }
+  .content, .main-footer {
+    grid-column: col-start 4 / span 9;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 700px) {
+  body {
+  /* Location of the image */
+  background-image: url(IMG/bg-01.png);
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+  .main-head{
+    grid-column: col-start / span 1;
+    grid-row: 1 / 2;
+  }
+  .main-head img{
+    grid-row: 1 / 2;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+  }
+  .main-nav{
+    grid-column: col-start 6 / span 8;
+    grid-row: 1 / 1;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+  .main-nav ul{
+    list-style: none;
+  }
+  .main-nav ul .active{
+    border-bottom: 2px solid white;
+  }
+  .content {
+    grid-column: col-start 4 / span 6;
+    grid-row: 23;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .side {
+    grid-column: col-start 6 / span 2;
+    grid-row: 24;
+    background-color: #485F29;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .side a{
+    text-decoration: none;
+    color: white;
+  }
+ .uno{
+  grid-column: col-start 5 / span 2;
+  grid-row: 1;
+  color:white;
+  font-family: 'Josefin Sans', sans-serif;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  text-decoration: none;
+
+}
+.uno a{
+    border-bottom: 2px solid white;
+    padding-bottom:3px;
+    text-decoration: none;
+    color: white;
+}
+.dos{
+ grid-column: col-start 7 / span 2;
+ grid-row: 1;
+ color:white;
+ font-family: 'Josefin Sans', sans-serif;
+ justify-content: center;
+ text-align: center;
+ padding-top: 20px;
+}
+.dos a{
+  text-decoration: none;
+  color: white;
+}
+.dos a:hover{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.6s;
+}
+.uno a:hover{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.6s;
+}
+.tres a:hover{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.6s;
+}
+.quatro a:hover{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.6s;
+}
+.tres a{
+  text-decoration: none;
+  color: white;
+}
+.quatro a{
+  text-decoration: none;
+  color: white;
+}
+.tres{
+ grid-column: col-start 9 / span 2;
+ grid-row: 1;
+ color:white;
+ font-family: 'Josefin Sans', sans-serif;
+ justify-content: center;
+ text-align: center;
+ padding-top: 20px;
+}
+.quatro{
+ grid-column: col-start 11 / span 2;
+ grid-row: 1;
+ color:white;
+ font-family: 'Josefin Sans', sans-serif;
+ justify-content: center;
+ text-align: center;
+ padding-top: 20px;
+}
+.side:hover{
+  background-color: #56742D;
+  transition: 0.6s;
+  cursor: pointer;
+  text-decoration: none;
+}
+  .main-footer {
+    grid-column: col-start / span 12;
+  }
+}
